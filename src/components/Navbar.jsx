@@ -34,12 +34,12 @@ const profileMenuItems = [
   {
     label: "Linkedin",
     icon: faLinkedin,
-    href: "#"
+    href: "https://www.linkedin.com/in/sudirmansyah-sudirmansyah-5187271a3/"
   },
   {
     label: "Github",
     icon: faGithub,
-    href: "#"
+    href: "https://github.com/sudirmansyah1"
   },
   {
     label: "Instagram",
@@ -49,7 +49,7 @@ const profileMenuItems = [
   {
     label: "Twitter",
     icon: faXTwitter,
-    href: "#"
+    href: "https://twitter.com/X_YorBoy"
   },
 ];
  
@@ -110,7 +110,7 @@ export default function ComplexNavbar() {
    
     return (
         <div className="navbar-container">
-      <Navbar className="mx-auto mt-3 max-w-screen-xl p-2 lg:rounded-full lg:pl-6">
+      <Navbar className="mx-auto mt-5 max-w-screen-xl p-2 lg:rounded-full lg:pl-6">
         <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"

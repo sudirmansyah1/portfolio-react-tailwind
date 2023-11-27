@@ -1,0 +1,10 @@
+nav {
+  position: absolute;
+  z-index: 999999999999;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    position: relative; /* For positioning the absolute element */
+}

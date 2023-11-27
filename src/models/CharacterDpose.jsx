@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 import { act, useFrame } from '@react-three/fiber';
 import { useAnimations, useFBX, useGLTF } from "@react-three/drei";
 
-import characterDpose3d from "../../public/assets/3D/characterDpose.glb";
-import dpose from "../../public/assets/3D/dPose.fbx";
+import characterDpose3d from "../assets//3D/characterDpose.glb";
+import dpose from "../assets//3D/dPose.fbx";
 export function CharacterDpose({selectedAnims, ...props}){
     const group = useRef();
     const { nodes, materials } = useGLTF(characterDpose3d);

@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 import { act, useFrame } from '@react-three/fiber';
 import { useAnimations, useFBX, useGLTF } from "@react-three/drei";
 
-import characterWaving from "../../public/assets/3D/characterWaving.glb";
-import Waving from "../../public/assets/3D/Waving.fbx";
+import characterWaving from "../assets//3D/characterWaving.glb";
+import Waving from "../assets//3D/Waving.fbx";
 export function CharacterWaving({selectedAnims, ...props}){
     const group = useRef();
     const { nodes, materials } = useGLTF(characterWaving);

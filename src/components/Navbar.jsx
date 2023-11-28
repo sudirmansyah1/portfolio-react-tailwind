@@ -20,6 +20,7 @@ import {
   ChevronDownIcon,
   RocketLaunchIcon,
   Bars2Icon,
+  XMarkIcon
 } from "@heroicons/react/24/solid";
 import { NavLink } from 'react-router-dom';
 import Sudirmansyah from "../../public/sudirmansyah.jpeg"
@@ -110,7 +111,7 @@ export default function ComplexNavbar() {
    
     return (
         <div className="navbar-container">
-      <Navbar className="mx-auto mt-5 max-w-screen-xl p-2 lg:rounded-full lg:pl-6">
+      <Navbar className="mx-auto md:mt-5 mt-0 max-w-screen-xl p-2 lg:rounded-full lg:pl-6">
         <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
@@ -135,7 +136,7 @@ export default function ComplexNavbar() {
             onClick={toggleIsNavOpen}
             className="ml-auto mr-2 lg:hidden"
           >
-            <Bars2Icon className="h-6 w-6" />
+            {isNavOpen ? (<XMarkIcon className="h-6 w-6" />):(<Bars2Icon className="h-6 w-6" />)}
           </IconButton>
           
           <ProfileMenu />
@@ -159,7 +160,7 @@ function ProfileMenu() {
         <Button
           variant="text"
           color="blue-gray"
-          className="flex items-center gap-2 lg:rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto"
+          className="flex items-center gap-2 lg:rounded-full p-3 lg:ml-auto"
         >
           Social Media
           <ChevronDownIcon

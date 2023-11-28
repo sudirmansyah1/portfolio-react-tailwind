@@ -22,8 +22,8 @@ function ExperienceView() {
             <div className="experience-canvas relative">
                 <div className="container mx-auto absolute top-0 left-0 right-0">
                     <div className="flex flex-col justify-center items-center">
-                        <div className="w-full mt-40">
-                            <h1 className="text-center text-5xl md:text-5xl">Job Experience</h1>
+                        <div className="w-full md:mt-40 mt-24">
+                            <h1 className="text-center text-3xl md:text-5xl">Job Experience</h1>
                         </div>
                         
                     </div>
@@ -57,8 +57,8 @@ function ExperienceView() {
                 <div className="container mx-auto absolute top-0 left-0 right-0 h-full">
                     <div className="flex flex-col justify-center items-center h-full">
                         <div className="flex items-center justify-center h-full">
-                            <div className="w-1/2">
-                                <h3 className="text-center text-3xl">Pelindo Solusi Digital</h3>
+                            <div className="md:w-1/2">
+                                <h3 className="text-center text-2xl md:text-3xl">Pelindo Solusi Digital</h3>
                                 <h5 className="text-center">Nov 2021 - Present</h5>
                                 <p className="text-center">
                                     At Pelindo Solusi Digital, a subsidiary of PT Pelabuhan Indonesia (PELINDO), we specialize in IT solutions for port management. As a Developer Engineer within Pelindo Solusi Digital, my role revolves around meticulous bug fixing and handling change requests for existing applications. I'm also adept at seamlessly integrating applications and remain open to contributing to new projects as needed. This dynamic position allows me to constantly engage with diverse challenges in the realm of port IT solutions.

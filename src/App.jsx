@@ -4,7 +4,6 @@ import { Home, About, Contact, Experience } from "./pages";
 
 const App = () => {
   return (
-    // <main>
       <Router>
         <Navbar />
         <Routes>
@@ -24,7 +23,6 @@ const App = () => {
           />
         </Routes>
       </Router>
-    // </main>
   );
 };
 

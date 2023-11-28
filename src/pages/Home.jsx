@@ -1,4 +1,4 @@
-import { Suspense, useRef, useState, useEffect } from "react";
+import { Suspense, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import TypeIt from "typeit-react";
 import { CharacterSeat, Room } from '../models';
@@ -14,7 +14,7 @@ export default function Home() {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize(); // Check on initial render
+    handleResize();
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -31,8 +31,6 @@ function Hero({ isMobile }) {
 
   const characterPosition = isMobile ? [-0.1, -2.1, -9.5] : [2.9, -3.1, -7.5];
   const roomPosition = isMobile ? [-3.0, -2.0, -10.5] : [0.0, -3.0, -8.5];
-
-  // Define newX, newY, newZ, newRoomX, newRoomY, newRoomZ based on screen size
 
   return (
     <>
@@ -65,7 +63,6 @@ function Hero({ isMobile }) {
             </Suspense>
           </Canvas>
 
-          {/* Other content */}
           <div className="container mx-auto text-hero">
             <div className="flex items-center h-screen">
               <h1 className="text-5xl p-10">

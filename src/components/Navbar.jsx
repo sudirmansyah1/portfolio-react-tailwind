@@ -172,7 +172,7 @@ function ProfileMenu() {
       <MenuList className="p-1 z-[999999999999]">
         {profileMenuItems.map(({ label, icon, href }) => {
           return (
-            <a href={href}>
+            <a href={href} target="_blank">
                 <MenuItem
                 onClick={closeMenu}
                 className={`flex items-center gap-2 rounded`}

@@ -5,7 +5,7 @@ import { Html } from "@react-three/drei";
 const Loading = () => {
     return (
     <Html>
-        <Spinner className="h-16 w-16 text-gray-900/50" />
+        <Spinner color="blue" className="h-16 w-16 text-gray-900/50" />
     </Html>);
 };
 

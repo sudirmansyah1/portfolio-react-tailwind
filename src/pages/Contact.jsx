@@ -5,7 +5,6 @@ import TypeIt from "typeit-react";
 import {  CharacterDpose } from '../models';
 import { Loading } from '../components'
 
-// import "../assets/styles/pages/contact.css"
 export default function ContactM() {
 
   return (

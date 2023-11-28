@@ -13,8 +13,7 @@ export function Container(props) {
     const { nodes, materials } = useGLTF(Container3d);
     useFrame(() => {
         if (refCheck.current) {
-            // refCheck.current.rotation.x += 0.005; // Adjust rotation speed here
-            refCheck.current.rotation.y += 0.0015; // Adjust rotation speed here
+            refCheck.current.rotation.y += 0.0015;
         }
     });
     return (

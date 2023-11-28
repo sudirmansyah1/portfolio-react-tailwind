@@ -1,10 +1,25 @@
+import { useState, useEffect } from 'react';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { Navbar } from "./components";
+import { Navbar, Preloader } from "./components";
 import { Home, About, Contact, Experience } from "./pages";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
       <Router>
+        {loading ? (
+        <Preloader /> // Your Preloader component
+      ) : (
+        <>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -22,6 +37,7 @@ const App = () => {
             }
           />
         </Routes>
+        </>)}
       </Router>
   );
 };

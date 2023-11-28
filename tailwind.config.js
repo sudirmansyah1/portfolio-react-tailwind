@@ -6,7 +6,7 @@ module.exports = withMT({
     extend: {
       zIndex: {
         '999999999999': '999999999999',
-      }
+      },
     }
   },
   plugins: [],

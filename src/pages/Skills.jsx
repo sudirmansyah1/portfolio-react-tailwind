@@ -147,7 +147,7 @@ const SkillIcon = ({ icon, name }) => {
         alt={name}
         className="w-full"
       />
-      <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 hover:bg-black transition duration-300 ease-in-out">
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 hover:bg-black transition duration-700 ease-in-out">
         <p className="text-center">{name}</p>
       </div>
     </div>

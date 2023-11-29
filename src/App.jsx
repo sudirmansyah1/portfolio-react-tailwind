@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { Navbar, Preloader } from "./components";
-import { Home, About, Contact, Experience, Skills } from "./pages";
+import { Home, About, Contact, Experience, Skills, Project } from "./pages";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -32,6 +32,7 @@ const App = () => {
                   <Route path='/experience' element={<Experience />} />
                   <Route path='/contact' element={<Contact />} />
                   <Route path='/skills' element={<Skills />} />
+                  <Route path='/project' element={<Project />} />
                 </Routes>
                 {/* <Footer /> */}
               </>

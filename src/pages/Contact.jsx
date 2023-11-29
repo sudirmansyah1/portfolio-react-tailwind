@@ -1,7 +1,6 @@
 
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import TypeIt from "typeit-react";
 import {  CharacterDpose } from '../models';
 import { Loading } from '../components'
 

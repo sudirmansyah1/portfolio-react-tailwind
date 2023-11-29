@@ -20,7 +20,7 @@ import {
     postgresql,
     express,
     fastify
- } from "../assets/skills"
+ } from "../components/skills"
 
 
 const projects = [

@@ -12,6 +12,9 @@ import php from "./php.svg"
 import react from "./react.svg"
 import tibco from "./tibco.svg"
 import lua from "./lua-official.svg"
+import postgresql from "./postgresql.svg"
+import express from "./express.svg"
+import fastify from "./fastify.svg"
 
 export {
     bootstrap,
@@ -27,5 +30,8 @@ export {
     php,
     react,
     tibco,
-    lua
+    lua,
+    postgresql,
+    fastify,
+    express
 }

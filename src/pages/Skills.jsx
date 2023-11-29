@@ -13,11 +13,85 @@ import {
     php,
     react,
     tibco,
-    lua
+    lua,
+    postgresql,
+    express,
+    fastify
  } from "../assets/skills"
  import { Canvas } from "@react-three/fiber";
  import { Loading } from '../components'
  import { CharacterSadIdle } from '../models';
+
+const SkillList = [
+    {
+        label: "HTML",
+        icon: html
+    },
+    {
+        label: "CSS",
+        icon: css
+    },
+    {
+        label: "Javascript",
+        icon: javascript
+    },
+    {
+        label: "PHP",
+        icon: php
+    },
+    {
+        label: "Lua",
+        icon: lua
+    },
+    {
+        label: "GIT",
+        icon: git
+    },
+    {
+        label: "NodeJS",
+        icon: nodejs
+    },
+    {
+        label: "Bootstrap",
+        icon: bootstrap
+    },
+    {
+        label: "Codeigniter",
+        icon: codeigniter
+    },
+    {
+        label: "React",
+        icon: react
+    },
+    {
+        label: "Express",
+        icon: express
+    },
+    {
+        label: "Fastify",
+        icon: fastify
+    },
+    {
+        label: "Docker",
+        icon: docker
+    },
+    {
+        label: "Tibco",
+        icon: tibco
+    },
+    {
+        label: "MySQL",
+        icon: mysql
+    },
+    {
+        label: "PostgreSQL",
+        icon: postgresql
+    },
+    {
+        label: "Oracle SQL",
+        icon: oracle
+    }
+]
 
 export default function Skills() {
   return (
@@ -53,21 +127,10 @@ export default function Skills() {
                     </Canvas>
                 </div>
                 <div className="flex items-center">
-                    <div className="flex flex-wrap justify-center items-center h-screen mt-20 sm:mt-0 sm:py-20 sm:px-5">
-                        <SkillIcon icon={html} name="HTML" />
-                        <SkillIcon icon={css} name="CSS" />
-                        <SkillIcon icon={javascript} name="Javascript" />
-                        <SkillIcon icon={php} name="PHP" />
-                        <SkillIcon icon={lua} name="Lua" />
-                        <SkillIcon icon={git} name="GIT" />
-                        <SkillIcon icon={nodejs} name="NodeJS" />
-                        <SkillIcon icon={bootstrap} name="Bootstrap" />
-                        <SkillIcon icon={codeigniter} name="Codeigniter" />
-                        <SkillIcon icon={react} name="React" />
-                        <SkillIcon icon={docker} name="Docker" />
-                        <SkillIcon icon={tibco} name="Tibco" />
-                        <SkillIcon icon={mysql} name="MySQL" />
-                        <SkillIcon icon={oracle} name="Oracle" />
+                    <div className="flex flex-wrap justify-center items-center h-screen mt-20 sm:mt-0 sm:py-20 sm:px-5">  
+                        {SkillList.map(({ icon, label }) => (
+                            <SkillIcon icon={icon} name={label} />
+                        ))}
                     </div>
                 </div>
             </div>
@@ -84,7 +147,7 @@ const SkillIcon = ({ icon, name }) => {
         alt={name}
         className="w-full"
       />
-      <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300 ease-in-out">
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 hover:bg-black transition duration-300 ease-in-out">
         <p className="text-center">{name}</p>
       </div>
     </div>

@@ -2,7 +2,7 @@ import { useFrame } from '@react-three/fiber';
 import React, { useRef, useState, useEffect } from 'react';
 import { useGLTF, Html } from "@react-three/drei";
 
-import Kamar3d from "../assets//3D/kamar.glb"
+import Kamar3d from "../assets/3D/kamar.glb"
 export function Room(props) {
   const meshRef = useRef();
 

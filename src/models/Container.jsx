@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { act, useFrame } from '@react-three/fiber';
 import { useGLTF } from "@react-three/drei";
 
-import Container3d from "../assets//3D/container.glb";
+import Container3d from "../assets/3D/container.glb";
 
 export function Container(props) {
     const refCheck = useRef();

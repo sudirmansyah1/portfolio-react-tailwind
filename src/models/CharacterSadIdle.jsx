@@ -2,19 +2,19 @@ import { useEffect, useRef } from "react";
 import { act, useFrame } from '@react-three/fiber';
 import { useAnimations, useFBX, useGLTF } from "@react-three/drei";
 
-import characterDpose3d from "../assets/3D/characterDpose.glb";
-import dpose from "../assets/3D/dPose.fbx";
-export function CharacterDpose({selectedAnims, ...props}){
+import characterSad from "../assets/3D/characterSad.glb";
+import Sad from "../assets/3D/Sad.fbx";
+export function CharacterSadIdle({selectedAnims, ...props}){
     const group = useRef();
-    const { nodes, materials } = useGLTF(characterDpose3d);
+    const { nodes, materials } = useGLTF(characterSad);
 
     // Store animations in an object for easier access
     const animations = {
-        dpose: useFBX(dpose).animations,
+      Sad: useFBX(Sad).animations,
         // Add more animations here as needed
     };
 
-    const { actions, mixer } = useAnimations(animations.dpose, group);
+    const { actions, mixer } = useAnimations(animations.Sad, group);
 
     useEffect(() => {
         const selectedAnimation = animations[selectedAnims];
@@ -98,5 +98,5 @@ export function CharacterDpose({selectedAnims, ...props}){
 }
 
 
-useGLTF.preload(characterDpose3d);
-useFBX.preload(dpose);
+useGLTF.preload(characterSad);
+useFBX.preload(Sad);

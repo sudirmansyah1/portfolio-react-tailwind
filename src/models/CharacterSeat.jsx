@@ -2,9 +2,9 @@ import { useEffect, useRef } from "react";
 import { act, useFrame } from '@react-three/fiber';
 import { useAnimations, useFBX, useGLTF } from "@react-three/drei";
 
-import character3D from "../assets//3D/character.glb";
-import Sitting from "../assets//3D/Sitting.fbx";
-import Waving from "../assets//3D/Waving.fbx";
+import character3D from "../assets/3D/character.glb";
+import Sitting from "../assets/3D/Sitting.fbx";
+import Waving from "../assets/3D/Waving.fbx";
 export function CharacterSeat({selectedAnims, ...props}){
     const group = useRef();
     const { nodes, materials } = useGLTF(character3D);

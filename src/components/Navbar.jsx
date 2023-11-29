@@ -119,7 +119,7 @@ export default function ComplexNavbar() {
              <Avatar
             variant="circular"
             size="sm"
-            alt="tania andrew"
+            alt="Sudirmansyah"
             className="border border-gray-900 p-0.5 mr-3"
             src={Sudirmansyah}
           /> Sudirmansyah

@@ -17,8 +17,9 @@ import {
     postgresql,
     express,
     fastify
- } from "../assets/skills"
+ } from "../components/skills"
  import { Canvas } from "@react-three/fiber";
+ import { LazyLoadImage } from 'react-lazy-load-image-component';
  import { Loading } from '../components'
  import { CharacterSadIdle } from '../models';
 
@@ -142,7 +143,7 @@ export default function Skills() {
 const SkillIcon = ({ icon, name }) => {
   return (
     <div className="flex justify-center relative w-20 h-20 md:w-15 md:h-15 rounded-full overflow-hidden shadow-md bg-gray-200 hover:bg-gray-900 hover:text-white mr-2 md:mr-3 transition duration-300 ease-in-out">
-      <img
+      <LazyLoadImage
         src={icon}
         alt={name}
         className="w-full"

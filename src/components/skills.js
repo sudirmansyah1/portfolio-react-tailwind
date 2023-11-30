@@ -15,6 +15,9 @@ import lua from "../../public/assets/images/brand/lua-official.svg"
 import postgresql from "../../public/assets/images/brand/postgresql.svg"
 import express from "../../public/assets/images/brand/express.svg"
 import fastify from "../../public/assets/images/brand/fastify.svg"
+import tailwind from "../../public/assets/images/brand/tailwind.svg"
+import vite from "../../public/assets/images/brand/vite.svg"
+import threejs from "../../public/assets/images/brand/threejs.svg"
 
 export {
     bootstrap,
@@ -33,5 +36,8 @@ export {
     lua,
     postgresql,
     fastify,
-    express
+    express,
+    vite,
+    tailwind,
+    threejs
 }

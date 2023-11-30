@@ -19,7 +19,10 @@ import {
     lua,
     postgresql,
     express,
-    fastify
+    fastify,
+    tailwind,
+    vite,
+    threejs
  } from "../components/skills"
 
 
@@ -37,6 +40,20 @@ const projects = [
      ],
      url: "https://fivem.authen.co.id"
    },
+   {
+    id: 2,
+    title: 'Dragon Three',
+    description: 'This project is created to fill leisure time and serves as an example project utilizing React, Tailwind, and Three.js. It stands as a representation in my portfolio.',
+    image: 'https://cdn.discordapp.com/attachments/599393791773900816/1179860351567810712/image.png',
+    avatars: [
+      nodejs,
+      react,
+      tailwind,
+      threejs,
+      vite,
+    ],
+    url: "https://dragon.sudirmansyah.id"
+  },
 ];
  
 const App = () => {

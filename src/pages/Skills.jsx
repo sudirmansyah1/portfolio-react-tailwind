@@ -16,7 +16,10 @@ import {
     lua,
     postgresql,
     express,
-    fastify
+    fastify,
+    tailwind,
+    vite,
+    threejs
  } from "../components/skills"
  import { Canvas } from "@react-three/fiber";
  import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -61,8 +64,20 @@ const SkillList = [
         icon: codeigniter
     },
     {
+        label: "Tailwind",
+        icon: tailwind
+    },
+    {
         label: "React",
         icon: react
+    },
+    {
+        label: "Vite",
+        icon: vite
+    },
+    {
+        label: "Three JS",
+        icon: threejs
     },
     {
         label: "Express",

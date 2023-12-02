@@ -35,7 +35,7 @@ const profileMenuItems = [
   {
     label: "Linkedin",
     icon: faLinkedin,
-    href: "https://www.linkedin.com/in/sudirmansyah-sudirmansyah-5187271a3/"
+    href: "https://www.linkedin.com/in/sudirmansyah/"
   },
   {
     label: "Github",

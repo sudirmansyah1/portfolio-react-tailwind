@@ -18,6 +18,7 @@ import fastify from "../../public/assets/images/brand/fastify.svg"
 import tailwind from "../../public/assets/images/brand/tailwind.svg"
 import vite from "../../public/assets/images/brand/vite.svg"
 import threejs from "../../public/assets/images/brand/threejs.svg"
+import nextjs from "../../public/assets/images/brand/nextjs.svg"
 
 export {
     bootstrap,
@@ -39,5 +40,6 @@ export {
     express,
     vite,
     tailwind,
-    threejs
+    threejs,
+    nextjs
 }

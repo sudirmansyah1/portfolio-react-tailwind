@@ -19,7 +19,8 @@ import {
     fastify,
     tailwind,
     vite,
-    threejs
+    threejs,
+    nextjs
  } from "../components/skills"
  import { Canvas } from "@react-three/fiber";
  import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -70,6 +71,10 @@ const SkillList = [
     {
         label: "React",
         icon: react
+    },
+    {
+        label: "Next JS",
+        icon: nextjs
     },
     {
         label: "Vite",

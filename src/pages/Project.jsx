@@ -1,29 +1,30 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Avatar } from "@material-tailwind/react";
-
+import { NavLink } from 'react-router-dom';
 import { 
-    bootstrap,
-    codeigniter,
-    css,
-    docker,
-    git,
-    html,
-    javascript,
-    mysql,
-    nodejs,
-    oracle,
-    php,
-    react,
-    tibco,
-    lua,
-    postgresql,
-    express,
-    fastify,
-    tailwind,
-    vite,
-    threejs
- } from "../components/skills"
+  bootstrap,
+  codeigniter,
+  css,
+  docker,
+  git,
+  html,
+  javascript,
+  mysql,
+  nodejs,
+  oracle,
+  php,
+  react,
+  tibco,
+  lua,
+  postgresql,
+  express,
+  fastify,
+  tailwind,
+  vite,
+  threejs,
+  nextjs
+} from "../components/skills"
 
 
 const projects = [
@@ -54,6 +55,22 @@ const projects = [
     ],
     url: "https://dragon.sudirmansyah.id"
   },
+  {
+   id: 3,
+   title: 'Servant',
+   description: 'Servant (Service Error Management and Troubleshooting) is an internal application owned by PT Pelindo Solusi Digital, designed to address challenges in port applications managed by PT Pelindo Solusi Digital. This application serves to efficiently manage and troubleshoot issues that may arise within the port management system.',
+   image: 'https://cdn.discordapp.com/attachments/599393791773900816/1187813218366799972/image.png',
+   avatars: [
+     nodejs,
+     nextjs,
+     react,
+     tailwind,
+     express,
+     tibco,
+     postgresql,
+     oracle
+   ],
+ },
 ];
  
 const App = () => {
@@ -100,6 +117,7 @@ const Projects = ({ projects }) => {
               <p className="text-gray-600 mb-4">{description}</p>
               <div className="flex items-center -space-x-4">
                 {avatars.map((avatar, index) => (
+                  <NavLink to='/skills'>
                   <Avatar
                     key={index}
                     variant="circular"
@@ -107,6 +125,7 @@ const Projects = ({ projects }) => {
                     className="border-2 border-white hover:z-10 focus:z-10 bg-white shadow-lg"
                     src={avatar}
                   />
+                  </NavLink>
                 ))}
               </div>
             </motion.div>
